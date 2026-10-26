@@ -75,8 +75,8 @@ brew install android-platform-tools
 
 ### Install adbtui
 ```bash
-chmod +x adbtui_en.py
-./adbtui_en.py
+chmod +x adbtui.py
+./adbtui.py
 ```
 
 ---
@@ -85,14 +85,14 @@ chmod +x adbtui_en.py
 
 ### Start
 ```bash
-./adbtui_en.py
+./adbtui.py
 ```
 
 ### Help
 ```bash
-./adbtui_en.py --help
-./adbtui_en.py -h
-./adbtui_en.py -help
+./adbtui.py --help
+./adbtui.py -h
+./adbtui.py -help
 ```
 
 ### Controls
@@ -157,13 +157,13 @@ Install Android SDK Platform Tools (see Installation section).
 Ensure your terminal window is at least 60 characters wide and 15 lines tall. Update the `TERM` environment variable if colors are broken:
 ```bash
 export TERM=xterm-256color
-./adbtui_en.py
+./adbtui.py
 ```
 
 ### Can't see devices
 - Check device is connected: `adb devices`
 - Enable USB debugging in device settings
-- Try `./adbtui_en.py` → Restart ADB server
+- Try `./adbtui.py` → Restart ADB server
 - On Linux, you may need udev rules:
   ```bash
   sudo curl https://raw.githubusercontent.com/M0Rf30/android-udev-rules/main/51-android.rules \
